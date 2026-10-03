@@ -34,7 +34,7 @@ const serviceCategories: ServiceCategory[] = [
     subtitle: "Comprehensive Climate & Cooling Solutions",
     tag: "Cooling & Ventilation",
     icon: FiWind,
-    image: "../public/services-imgs/hvac-repair.webp",
+    image: "/services-imgs/hvac-repair.webp",
     imageAlt: "Industrial HVAC Chiller and Cooling Plant Installation",
     items: [
       { label: "Complete HVAC Turnkey Contracting (High-Side & Low-Side)" },
@@ -54,7 +54,7 @@ const serviceCategories: ServiceCategory[] = [
     subtitle: "End-to-End Electrical Contracting & Audits",
     tag: "Power & Distribution",
     icon: FiZap,
-    image: "../public/services-imgs/electrical-right-position.webp",
+    image: "/services-imgs/electrical-right-position.webp",
     imageAlt: "Electrical Switchgear Panel and Contracting",
     items: [
       {
@@ -84,7 +84,7 @@ const serviceCategories: ServiceCategory[] = [
     subtitle: "Sustainable Power & Energy Management",
     tag: "Clean Energy & Savings",
     icon: FiSun,
-    image: "../public/services-imgs/solar-installation.webp",
+    image: "/services-imgs/solar-installation.webp",
     imageAlt: "Commercial Rooftop Solar Energy System",
     items: [
       { label: "Rooftop & Ground-Mounted Solar Systems" },
@@ -99,7 +99,7 @@ const serviceCategories: ServiceCategory[] = [
     subtitle: "Life-Safety & Statutory Compliance",
     tag: "Life Safety & Protection",
     icon: FiAlertTriangle,
-    image: "../public/services-imgs/fire-spray.webp",
+    image: "/services-imgs/fire-spray.webp",
     imageAlt: "Fire Detection Alarm and Protection System",
     items: [
       { label: "Fire Alarm & Advanced Detection Systems" },
