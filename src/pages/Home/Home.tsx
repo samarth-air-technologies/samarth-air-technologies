@@ -6,6 +6,7 @@ import Cta from "./Sections/Cta";
 
 import Faq from "./Sections/Faq";
 import SectorWeServe from "../../components/SectorWeServe";
+import ClientLogos from "./Sections/ClientLogos";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <About />
       <StatsBar />
       <SectorWeServe />
+      <ClientLogos />
       <Faq />
       <Cta
         backgroundImage={"/services-imgs/electrical-variant.webp"}

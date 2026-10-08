@@ -35,7 +35,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-20 bg-slate-50/70 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
         {/* Left */}
         <AnimateIn variant="fade-right" delay={100}>
@@ -50,7 +50,8 @@ export default function FAQSection() {
             </h2>
 
             <p className="mt-6 text-slate-600 leading-relaxed max-w-md">
-              Everything you need to know about our MEP, HVAC, solar, fire, and electrical solutions.
+              Everything you need to know about our MEP, HVAC, solar, fire, and
+              electrical solutions.
             </p>
           </div>
         </AnimateIn>
@@ -76,10 +77,14 @@ export default function FAQSection() {
                   <button
                     onClick={() => toggleFAQ(index)}
                     className={`w-full flex items-center justify-between px-6 py-5 text-left transition-colors duration-300 ${
-                      isOpen ? "bg-primary text-white" : "hover:bg-gray-50 text-slate-900"
+                      isOpen
+                        ? "bg-primary text-white"
+                        : "hover:bg-gray-50 text-slate-900"
                     }`}
                   >
-                    <span className="font-semibold text-lg pr-4">{faq.question}</span>
+                    <span className="font-semibold text-lg pr-4">
+                      {faq.question}
+                    </span>
 
                     <span
                       className={`text-2xl font-light w-6 text-center transition-transform duration-300 shrink-0 ${
@@ -112,4 +117,3 @@ export default function FAQSection() {
     </section>
   );
 }
-

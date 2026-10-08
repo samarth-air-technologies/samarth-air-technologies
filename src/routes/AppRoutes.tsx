@@ -7,11 +7,12 @@ import Calculator from "../pages/Calculator/Calculator";
 import Services from "../pages/Services/Services";
 
 import Contact from "../pages/Contact/Contact";
+import TermsAndConditions from "../pages/TermsAndConditions";
 import NotFound from "../pages/NotFound/NotFound";
 
 const AppRoutes = () => {
   return (
-    <Routes>
+    <Routes>  
       <Route path="/" element={<Home />} />
 
       <Route path="/about" element={<About />} />
@@ -21,6 +22,9 @@ const AppRoutes = () => {
       <Route path="/calculator" element={<Calculator />} />
 
       <Route path="/services" element={<Services />} />
+
+      <Route path="/terms" element={<TermsAndConditions />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
       {/* 404 */}
       <Route path="*" element={<NotFound />} />
