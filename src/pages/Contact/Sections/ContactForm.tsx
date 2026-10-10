@@ -160,8 +160,8 @@ ${formData.company.trim() ? `*Company:* ${formData.company}\n` : ""}*Service:* $
                       Samarth Air Technologies
                     </h3>
                     <p className="mt-2 text-sm text-white/70">
-                      Fill out the form and our specialists will respond within 24
-                      hours.
+                      Fill out the form and our specialists will respond within
+                      24 hours.
                     </p>
 
                     <div className="mt-8 flex flex-col gap-4 text-sm">
@@ -175,7 +175,9 @@ ${formData.company.trim() ? `*Company:* ${formData.company}\n` : ""}*Service:* $
                         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-white transition-colors duration-200 group-hover:bg-white/20">
                           <HiOutlineMail size={18} className="text-white" />
                         </div>
-                        <span className="font-medium">xyz@gmail.com</span>
+                        <span className="font-medium">
+                          samarthairtechnologies@gmail.com
+                        </span>
                       </div>
                       <div className="group flex items-start gap-3 transition-transform duration-200 hover:translate-x-1">
                         <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/10 text-white transition-colors duration-200 group-hover:bg-white/20">
@@ -184,7 +186,11 @@ ${formData.company.trim() ? `*Company:* ${formData.company}\n` : ""}*Service:* $
                             className="text-white"
                           />
                         </div>
-                        <span className="font-medium mt-1">Mumbai, Maharashtra, India</span>
+                        <span className="font-medium mt-1">
+                          Unit Number 26, Bharat Industrial Estate, Lal Bahadur
+                          Shastri Marg, Rajiv Gandhi Nagar, Bhandup West,
+                          Mumbai, Maharashtra 400078
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -200,7 +206,7 @@ ${formData.company.trim() ? `*Company:* ${formData.company}\n` : ""}*Service:* $
                     <div className="overflow-hidden border border-white/15 rounded-lg transition-transform duration-300 hover:scale-[1.01]">
                       <iframe
                         title="Samarth Air Technologies location"
-                        src="https://www.google.com/maps?q=Mumbai,Maharashtra,India&output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.903601157595!2d72.91617370316253!3d19.14105874628061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9007c41019f%3A0xc4cdb00f93f30a31!2sSamarth%20Air%20Technologies!5e0!3m2!1sen!2sus!4v1791621812712!5m2!1sen!2sus"
                         width="100%"
                         height="180"
                         style={{
@@ -242,7 +248,9 @@ ${formData.company.trim() ? `*Company:* ${formData.company}\n` : ""}*Service:* $
                         className={`${inputBase} ${errors.name ? "border-red-400" : "border-[#DDE3DA]"}`}
                       />
                       {errors.name && (
-                        <p className="mt-1 text-xs text-red-500">{errors.name}</p>
+                        <p className="mt-1 text-xs text-red-500">
+                          {errors.name}
+                        </p>
                       )}
                     </div>
 
@@ -301,7 +309,9 @@ ${formData.company.trim() ? `*Company:* ${formData.company}\n` : ""}*Service:* $
                       className={`${inputBase} ${errors.email ? "border-red-400" : "border-[#DDE3DA]"}`}
                     />
                     {errors.email && (
-                      <p className="mt-1 text-xs text-red-500">{errors.email}</p>
+                      <p className="mt-1 text-xs text-red-500">
+                        {errors.email}
+                      </p>
                     )}
                   </div>
 
@@ -373,4 +383,3 @@ ${formData.company.trim() ? `*Company:* ${formData.company}\n` : ""}*Service:* $
 };
 
 export default ContactForm;
-
