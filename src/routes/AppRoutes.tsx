@@ -11,28 +11,33 @@ import TermsAndConditions from "../pages/TermsAndConditions";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import NotFound from "../pages/NotFound/NotFound";
 
+import ScrollToTop from "../components/routes/ScrollToTop";
+
 const AppRoutes = () => {
   return (
-    <Routes>  
-      <Route path="/" element={<Home />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-      <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About />} />
 
-      <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
 
-      <Route path="/calculator" element={<Calculator />} />
+        <Route path="/calculator" element={<Calculator />} />
 
-      <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Services />} />
 
-      <Route path="/terms" element={<TermsAndConditions />} />
-      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/terms" element={<TermsAndConditions />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
-      <Route path="/privacy" element={<PrivacyPolicy />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-      {/* 404 */}
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+        {/* 404 */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 };
 
