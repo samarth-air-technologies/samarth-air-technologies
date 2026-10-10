@@ -8,6 +8,7 @@ import Services from "../pages/Services/Services";
 
 import Contact from "../pages/Contact/Contact";
 import TermsAndConditions from "../pages/TermsAndConditions";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 import NotFound from "../pages/NotFound/NotFound";
 
 const AppRoutes = () => {
@@ -25,6 +26,9 @@ const AppRoutes = () => {
 
       <Route path="/terms" element={<TermsAndConditions />} />
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
       {/* 404 */}
       <Route path="*" element={<NotFound />} />

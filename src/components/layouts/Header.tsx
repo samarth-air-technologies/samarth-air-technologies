@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-primary backdrop-blur-md border-b border-gray-100">
+      <header className="hidden md:block bg-primary backdrop-blur-md border-b border-gray-100">
         <Container className="flex h-14 items-center justify-between">
           {/* <Link
             to="/"
@@ -73,7 +73,7 @@ const Header = () => {
             </a>
           </Link> */}
 
-          <div className="flex justify-center items-center gap-4">
+          <div className="hidden md:flex justify-center items-center gap-4">
             <div className="flex items-center gap-2">
               <div className="p-1 rounded-full">
                 <HiMail size={18} className="text-white" />
@@ -92,7 +92,7 @@ const Header = () => {
         </Container>
       </header>
 
-      <header className="sticky top-0 z-50 bg-white">
+      <header className="sticky top-0 z-50 bg-white border-b-2 border-b-slate-950/10">
         <Container className="flex h-22 items-center justify-between bg-white">
           <Link to="/" onClick={() => setIsOpen(false)}>
             <img

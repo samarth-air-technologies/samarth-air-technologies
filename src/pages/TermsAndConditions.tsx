@@ -18,7 +18,6 @@ import {
   FiMail,
   FiPhone,
   FiMapPin,
-  FiPrinter,
   FiArrowUp,
   FiHelpCircle,
   FiChevronRight,
@@ -117,10 +116,6 @@ const TermsAndConditions: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
     <div className="bg-slate-50/50 min-h-screen text-slate-800">
       {/* Page Header */}
@@ -151,15 +146,6 @@ const TermsAndConditions: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-3">
-                <button
-                  onClick={handlePrint}
-                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition-all duration-200"
-                  title="Print or Save as PDF"
-                >
-                  <FiPrinter className="w-4 h-4 text-slate-600" />
-                  <span>Print PDF</span>
-                </button>
-
                 <button
                   onClick={() => scrollToSection("contact-us")}
                   className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-primary text-white hover:bg-primary-dark shadow-sm transition-all duration-200"
