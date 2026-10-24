@@ -63,10 +63,28 @@ const Footer = () => {
 
               <li>
                 <Link
+                  to="/calculator"
+                  className="transition-colors hover:text-white"
+                >
+                  Solar Calculator
+                </Link>
+              </li>
+
+              <li>
+                <Link
                   to="/contact"
                   className="transition-colors hover:text-white"
                 >
                   Contact Us
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/sitemap"
+                  className="transition-colors hover:text-white"
+                >
+                  Sitemap
                 </Link>
               </li>
             </ul>
@@ -182,7 +200,7 @@ const Footer = () => {
             reserved.
           </p>
 
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-5">
             <Link
               to="/privacy-policy"
               className="transition-colors hover:text-gray-300"
@@ -192,6 +210,10 @@ const Footer = () => {
 
             <Link to="/terms" className="transition-colors hover:text-gray-300">
               Terms & Conditions
+            </Link>
+
+            <Link to="/sitemap" className="transition-colors hover:text-gray-300">
+              Sitemap
             </Link>
           </div>
         </Container>

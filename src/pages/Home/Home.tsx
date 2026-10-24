@@ -7,8 +7,14 @@ import Cta from "./Sections/Cta";
 import Faq from "./Sections/Faq";
 import SectorWeServe from "../../components/SectorWeServe";
 import ClientLogos from "./Sections/ClientLogos";
+import useSEO from "../../hooks/useSEO";
 
 const Home = () => {
+  useSEO({
+    title: "Samarth Air Technologies | MEP & Fire Safety Solutions",
+    description:
+      "Samarth Air Technologies delivers reliable MEP, fire safety and energy solutions for commercial and industrial projects. Explore our services.",
+  });
   return (
     <>
       <Hero />

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PageHeader from "../components/PageHeader/PageHeader";
 import Container from "../components/UI/Container";
 import AnimateIn from "../components/UI/AnimateIn";
+import useSEO from "../hooks/useSEO";
 import {
   FiBookOpen,
   FiCheckCircle,
@@ -96,6 +97,12 @@ const sectionList = [
 ];
 
 const PrivacyPolicy: React.FC = () => {
+  useSEO({
+    title: "Privacy Policy | Samarth Air Technologies",
+    description:
+      "Read the Privacy Policy of Samarth Air Technologies to understand how we collect, use, protect and manage your personal information when you visit our website.",
+  });
+
   const [activeSection, setActiveSection] = useState<string>(
     "interpretation-and-definitions",
   );

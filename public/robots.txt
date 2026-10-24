@@ -1,0 +1,8 @@
+# Robots.txt for Samarth Air Technologies
+# Allow all search engine crawlers to discover and index site content
+
+User-agent: *
+Allow: /
+
+# XML Sitemap Location
+Sitemap: https://samarth-air-technologies.in/sitemap.xml

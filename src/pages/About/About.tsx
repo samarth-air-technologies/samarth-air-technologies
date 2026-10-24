@@ -4,8 +4,14 @@ import Pillars from "./Sections/Pillars";
 import WhyChooseUs from "./Sections/WhyChooseUs";
 import Timeline from "./Sections/Timeline";
 import Cta from "../Home/Sections/Cta";
+import useSEO from "../../hooks/useSEO";
 
 const About = () => {
+  useSEO({
+    title: "About Us | Samarth Air Technologies",
+    description:
+      "Learn about Samarth Air Technologies, our expertise, commitment to quality and approach to delivering reliable engineering and infrastructure solutions.",
+  });
   return (
     <>
       <PageHeader

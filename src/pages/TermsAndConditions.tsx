@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PageHeader from "../components/PageHeader/PageHeader";
 import Container from "../components/UI/Container";
 import AnimateIn from "../components/UI/AnimateIn";
+import useSEO from "../hooks/useSEO";
 import {
   FiBookOpen,
   FiCheckCircle,
@@ -66,6 +67,12 @@ const sectionList = [
 ];
 
 const TermsAndConditions: React.FC = () => {
+  useSEO({
+    title: "Terms and Conditions | Samarth Air Technologies",
+    description:
+      "Review the Terms and Conditions of Samarth Air Technologies governing website usage, service terms, intellectual property, disclaimers, and limitation of liability.",
+  });
+
   const [activeSection, setActiveSection] = useState<string>(
     "interpretation-and-definitions",
   );
