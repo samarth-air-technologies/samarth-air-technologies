@@ -96,7 +96,7 @@ const Header = () => {
         <Container className="flex h-22 items-center justify-between bg-white">
           <Link to="/" onClick={() => setIsOpen(false)}>
             <img
-              src="/logo/Smarath-air-technologies-logo-1.png"
+              src="/logo/Smarath-air-technologies-logo-1.webp"
               alt="samarth-air-technologies-logo"
               className="h-18 w-auto object-contain"
             />
