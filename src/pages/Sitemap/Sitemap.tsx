@@ -8,7 +8,6 @@ import {
   FiArrowRight,
   FiSearch,
   FiCode,
-  FiCpu,
   FiCompass,
 } from "react-icons/fi";
 import {
