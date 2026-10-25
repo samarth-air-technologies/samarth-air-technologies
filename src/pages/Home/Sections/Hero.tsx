@@ -11,6 +11,9 @@ export default function AcHero() {
         src="/services-imgs/hvac-variant.webp"
         alt="Technician servicing an air conditioning unit"
         className="absolute inset-0 h-full w-full object-cover animate-hero-zoom"
+        fetchPriority="high"
+        loading="eager"
+        decoding="async"
       />
       {/* Dark gradient overlay for text legibility */}
       <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/60 to-zinc-950/10" />
