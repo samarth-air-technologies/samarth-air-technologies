@@ -1,0 +1,26 @@
+# Samarth Air Technologies
+
+> Samarth Air Technologies provides MEP, fire safety, and energy solutions for commercial and industrial projects.
+
+## About Us
+
+Samarth Air Technologies specializes in building services and engineering solutions, including mechanical, electrical, and plumbing systems, fire safety, and energy solutions.
+
+## Our Services
+
+- MEP Solutions: https://www.samarth-air-technologies.in/
+- Fire Safety Solutions: https://www.samarth-air-technologies.in/
+- Energy Solutions: https://www.samarth-air-technologies.in/
+
+## Important Pages
+
+- [Home](https://www.samarth-air-technologies.in/)
+- [About Us](https://www.samarth-air-technologies.in/about/)
+- [Contact Us](https://www.samarth-air-technologies.in/contact/)
+- [Privacy Policy](https://www.samarth-air-technologies.in/privacy-policy/)
+- [Terms and Conditions](https://www.samarth-air-technologies.in/terms/)
+
+## Website Information
+
+- [Sitemap](https://www.samarth-air-technologies.in/sitemap.xml)
+- [Robots.txt](https://www.samarth-air-technologies.in/robots.txt)
