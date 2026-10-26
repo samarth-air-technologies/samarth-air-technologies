@@ -169,7 +169,7 @@ ${formData.company.trim() ? `*Company:* ${formData.company}\n` : ""}*Service:* $
                         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-white transition-colors duration-200 group-hover:bg-white/20">
                           <HiOutlinePhone size={18} className="text-white" />
                         </div>
-                        <span className="font-medium">+91 73047 39002</span>
+                        <span className="font-medium">+91 816 972 8188</span>
                       </div>
                       <div className="group flex items-center gap-3 transition-transform duration-200 hover:translate-x-1">
                         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-white transition-colors duration-200 group-hover:bg-white/20">

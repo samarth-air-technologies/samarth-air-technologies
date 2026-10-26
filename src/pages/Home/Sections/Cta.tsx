@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Container from "../../../components/UI/Container";
 import AnimateIn from "../../../components/UI/AnimateIn";
 
@@ -6,6 +7,7 @@ interface HeroCTAProps {
   heading?: string;
   description?: string;
   buttonText?: string;
+  buttonLink: string;
   onButtonClick?: () => void;
 }
 
@@ -14,6 +16,7 @@ const Cta = ({
   heading = "Seamless Execution, Uncompromised Quality",
   description = "We follow a streamlined process to ensure every HVAC, Fire Safety, Electrical, and Solar project is executed with precision. From your initial consultation to final testing and commissioning, we've got you covered.",
   buttonText = "Chat With Us",
+  buttonLink = "/contact",
   onButtonClick,
 }: HeroCTAProps) => {
   return (
@@ -49,12 +52,14 @@ const Cta = ({
           </AnimateIn>
 
           <AnimateIn variant="fade-up" delay={400}>
-            <button
-              onClick={onButtonClick}
-              className="mt-8 px-8 py-4 bg-primary text-white font-semibold transition-all duration-300 hover:bg-primary-dark hover:scale-105 hover:shadow-xl active:scale-95 rounded-full"
-            >
-              {buttonText}
-            </button>
+            <Link to={buttonLink}>
+              <button
+                onClick={onButtonClick}
+                className="mt-8 px-8 py-4 bg-primary text-white font-semibold transition-all duration-300 hover:bg-primary-dark hover:scale-105 hover:shadow-xl active:scale-95 rounded-full"
+              >
+                {buttonText}
+              </button>
+            </Link>
           </AnimateIn>
         </div>
       </Container>
@@ -63,4 +68,3 @@ const Cta = ({
 };
 
 export default Cta;
-

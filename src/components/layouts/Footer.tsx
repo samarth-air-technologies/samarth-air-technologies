@@ -162,7 +162,7 @@ const Footer = () => {
                   href="tel:+917304739002"
                   className="transition-colors hover:text-white"
                 >
-                  +91 73047 39002
+                  +91 816 972 8188
                 </a>
               </li>
 
@@ -212,7 +212,10 @@ const Footer = () => {
               Terms & Conditions
             </Link>
 
-            <Link to="/sitemap" className="transition-colors hover:text-gray-300">
+            <Link
+              to="/sitemap"
+              className="transition-colors hover:text-gray-300"
+            >
               Sitemap
             </Link>
           </div>

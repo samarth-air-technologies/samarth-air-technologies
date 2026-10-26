@@ -86,7 +86,7 @@ const Header = () => {
               <div className="p-1 rounded-full">
                 <HiPhone size={16} className="text-white" />
               </div>
-              <p className="font-semibold text-white/90">+91 73047 39002</p>
+              <p className="font-semibold text-white/90">+91 816 972 8188</p>
             </div>
           </div>
         </Container>
