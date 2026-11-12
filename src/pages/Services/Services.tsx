@@ -19,6 +19,7 @@ const Services = () => {
 
       <Facilities />
       <Cta
+        buttonLink="/contact"
         backgroundImage={"/services-imgs/fire-spray.webp"}
         onButtonClick={() => console.log("Chat Clicked")}
       />

@@ -10,7 +10,7 @@ const About = () => {
   useSEO({
     title: "About Us | Samarth Air Technologies",
     description:
-      "Learn about Samarth Air Technologies, our expertise, commitment to quality and approach to delivering reliable engineering and infrastructure solutions.",
+      "Learn about Samarth Air Technologies, our expertise, commitment to quality and approach to delivering reliable engineering and infrastructure solutions. ",
   });
   return (
     <>
@@ -24,6 +24,7 @@ const About = () => {
       <WhyChooseUs />
       <Timeline />
       <Cta
+        buttonLink="/contact"
         backgroundImage={"/services-imgs/fire-spray.webp"}
         onButtonClick={() => console.log("chat clicked")}
       />

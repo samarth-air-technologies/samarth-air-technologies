@@ -25,6 +25,7 @@ const Home = () => {
       <ClientLogos />
       <Faq />
       <Cta
+        buttonLink="/contact"
         backgroundImage={"/services-imgs/electrical-variant.webp"}
         onButtonClick={() => console.log("chat clicked")}
       />
