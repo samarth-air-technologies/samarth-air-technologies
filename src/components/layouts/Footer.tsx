@@ -9,7 +9,6 @@ import {
 import Container from "../UI/Container";
 
 const Footer = () => {
-  const extra = 0;
   return (
     <footer className="mt-auto bg-primary text-gray-300">
       {/* Main Footer */}

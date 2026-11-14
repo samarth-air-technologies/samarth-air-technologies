@@ -237,10 +237,10 @@ export default function Timeline() {
       setScrollProgress(progress);
 
       // Determine active milestone index based on position
-      const milestoneElements = Object.entries(itemRefs.current);
+      const milestoneElements = Object.values(itemRefs.current);
       let currentActiveIndex = 0;
 
-      milestoneElements.forEach(([_, el], idx) => {
+      milestoneElements.forEach((el, idx) => {
         if (!el) return;
         const elRect = el.getBoundingClientRect();
         if (elRect.top <= windowHeight * 0.6) {

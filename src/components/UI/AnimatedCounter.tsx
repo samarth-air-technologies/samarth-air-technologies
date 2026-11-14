@@ -11,20 +11,16 @@ export default function AnimatedCounter({
   duration = 2000,
   className = "",
 }: AnimatedCounterProps) {
-  const [displayValue, setDisplayValue] = useState("0");
+  const [displayValue, setDisplayValue] = useState<string | null>(null);
   const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
 
+  const hasNumeric = /\d+/.test(value);
+
   useEffect(() => {
     const node = ref.current;
-    if (!node) return;
-
-    // Extract numbers from value string (e.g., "120+" -> 120, "100%" -> 100, "6+" -> 6)
     const numericMatch = value.match(/\d+/);
-    if (!numericMatch) {
-      setDisplayValue(value);
-      return;
-    }
+    if (!node || !numericMatch) return;
 
     const targetNum = parseInt(numericMatch[0], 10);
     const matchIndex = value.indexOf(numericMatch[0]);
@@ -66,7 +62,7 @@ export default function AnimatedCounter({
 
   return (
     <span ref={ref} className={className}>
-      {displayValue}
+      {displayValue ?? (hasNumeric ? "0" : value)}
     </span>
   );
 }
