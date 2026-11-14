@@ -17,17 +17,10 @@ export interface SectorItem {
   title: string;
   icon: React.ElementType;
   tag: string;
-}
-
-export interface SectorItem {
-  id: string;
-  title: string;
-  icon: React.ElementType;
-  tag: string;
   description?: string;
 }
 
-export const sectorsData: SectorItem[] = [
+const sectorsData: SectorItem[] = [
   {
     id: "industrial",
     title: "Industrial & Manufacturing",
